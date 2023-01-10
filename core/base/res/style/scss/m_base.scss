@@ -1,0 +1,43 @@
+@import "sub/_reset";
+
+$font_size: 14px; // Размер шрифта по умолчанию
+$aside_w: 20%; // Ширина Aside
+$main_w: 100% - $aside_w; // Ширина Main
+
+html,
+body {
+	font-size: $font_size;
+}
+
+main {
+	width: $main_w;
+	min-height: 100vh;
+	padding: 0 1rem;
+}
+
+.aside {
+	width: $aside_w;
+	padding: 1rem 0 0 0;
+}
+
+
+.ta_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1600px;
+}
+
+
+
+.section-pageTitle {
+	width: 100%;
+	padding: 1rem 1.5rem;
+	flex: 1 1 auto;
+
+	.section-pageTitle-text {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+}

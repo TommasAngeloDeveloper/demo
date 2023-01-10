@@ -1,0 +1,124 @@
+@import "sub/_reset";
+@import "sub/_config";
+
+// Запрет выделения
+* {
+	user-select: auto; // Авто настройка(Разрешено)
+	//user-select: none; // Запрет выделения всего
+}
+
+
+
+html,
+body {
+	font-size: $font_size;
+}
+
+
+main {
+	width: $main_w;
+	min-height: 100vh;
+	padding: 0 1rem;
+}
+
+.aside {
+	width: $aside_w;
+	padding: 1rem 0 0 0;
+}
+
+.header {
+	height: $header_h;
+}
+
+.nav {
+	height: $nav_h;
+}
+
+.ta_container {
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1600px;
+	height: 100%;
+}
+
+.section-pageTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0.5rem 0;
+	height: 2.5rem;
+
+	.section-pageTitle-text {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+}
+
+.test {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(255, 1, 1);
+}
+
+@import "sub/_style";
+
+@media (max-width: 1400px) {
+
+	html,
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	html,
+	body {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 1025px) {
+
+	html,
+	body {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 900px) {
+
+	html,
+	body {
+		font-size: 9px;
+	}
+}
+
+@media (max-width: 750px) {
+
+	html,
+	body {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	html,
+	body {
+		font-size: 7px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	html,
+	body {
+		font-size: 6px;
+	}
+}

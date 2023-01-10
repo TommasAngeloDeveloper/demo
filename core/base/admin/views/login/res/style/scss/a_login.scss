@@ -1,0 +1,101 @@
+$block_inputs_h: 50%; // Размер шрифта по умолчанию
+$block_lable_up_h: (100% -$block_inputs_h)/2; // Ширина Aside
+$block_buttons: 100% - $block_inputs_h - $block_lable_up_h; // Ширина Aside
+$form_w: 25rem;
+.ta_container {
+	height: 100vh;
+}
+
+.section-form {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	.form-container {
+		margin: auto;
+		.form-wrapper {
+			.form {
+				background: rgb(242, 242, 242);
+				width: $form_w;
+				border: solid black 0.1rem;
+				border-radius: 0.5rem;
+				width: 100%;
+				padding: 1rem;
+				.block-form_title {
+					padding: 0 0 1rem 00;
+					.form_title-container {
+						color: rgb(245, 244, 244);
+						background: rgb(26, 115, 232);
+						padding: 0.5rem 0;
+						border-radius: 0.3rem;
+						.form_title-wrapper {
+							.form_title-text {
+								font-size: 2rem;
+								font-weight: bold;
+								//	color: rgb(90, 90, 90);
+							}
+						}
+					}
+				}
+				.block-lable_up {
+					.lable_up-container {
+						.lable_up-wrapper {
+							.lable_up-text {
+								display: inline-block;
+								font-size: 1.5rem;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.block-inputs {
+					.inputs-container {
+						.inputs-wrapper {
+							.block-input {
+								width: 100%;
+
+								padding: 0.5rem;
+								.input-container {
+									.input-wrapper {
+										.input {
+											height: 2rem;
+											width: $form_w * 0.7;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.block-buttons {
+					.buttons-container {
+						.buttons-wrapper {
+							.block-button {
+								.button-container {
+									.button-wrapper {
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										padding: 1rem;
+										.button {
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											font-size: 1.3rem;
+											font-weight: bolder;
+											width: 5rem;
+											height: 2rem;
+											color: rgb(255, 255, 255);
+											background: rgb(26, 115, 232);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,419 @@
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  block-size: 100% 100%;
+  font-size: inherit;
+  color: inherit;
+  font-family: Helvetica, sans-serif;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  cursor: default;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+*:hover {
+  cursor: default;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html,
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  text-align: center;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=file],
+input[type=file]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  display: inline-block;
+  outline: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+pre {
+  display: block;
+  width: 100%;
+  height: auto;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
+/*------------------------------------------------------*/
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-pull-12 {
+  right: 100%;
+}
+
+.col-pull-11 {
+  right: 91.66666667%;
+}
+
+.col-pull-10 {
+  right: 83.33333333%;
+}
+
+.col-pull-9 {
+  right: 75%;
+}
+
+.col-pull-8 {
+  right: 66.66666667%;
+}
+
+.col-pull-7 {
+  right: 58.33333333%;
+}
+
+.col-pull-6 {
+  right: 50%;
+}
+
+.col-pull-5 {
+  right: 41.66666667%;
+}
+
+.col-pull-4 {
+  right: 33.33333333%;
+}
+
+.col-pull-3 {
+  right: 25%;
+}
+
+.col-pull-2 {
+  right: 16.66666667%;
+}
+
+.col-pull-1 {
+  right: 8.33333333%;
+}
+
+.col-pull-0 {
+  right: auto;
+}
+
+.col-push-12 {
+  left: 100%;
+}
+
+.col-push-11 {
+  left: 91.66666667%;
+}
+
+.col-push-10 {
+  left: 83.33333333%;
+}
+
+.col-push-9 {
+  left: 75%;
+}
+
+.col-push-8 {
+  left: 66.66666667%;
+}
+
+.col-push-7 {
+  left: 58.33333333%;
+}
+
+.col-push-6 {
+  left: 50%;
+}
+
+.col-push-5 {
+  left: 41.66666667%;
+}
+
+.col-push-4 {
+  left: 33.33333333%;
+}
+
+.col-push-3 {
+  left: 25%;
+}
+
+.col-push-2 {
+  left: 16.66666667%;
+}
+
+.col-push-1 {
+  left: 8.33333333%;
+}
+
+.col-push-0 {
+  left: auto;
+}
+
+.col-offset-12 {
+  margin-left: 100%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+.col-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+.col-offset-0 {
+  margin-left: 0%;
+}
+
+/***************/
+html,
+body {
+  font-size: 14px;
+}
+
+main {
+  width: 80%;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+
+.aside {
+  width: 20%;
+  padding: 1rem 0 0 0;
+}
+
+.ta_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.section-pageTitle {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.section-pageTitle .section-pageTitle-text {
+  font-weight: bold;
+  font-size: 2rem;
+}

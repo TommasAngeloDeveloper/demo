@@ -1,0 +1,77 @@
+.ta_container {
+  height: 100vh;
+}
+
+.section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.section-form .form-container {
+  margin: auto;
+}
+.section-form .form-container .form-wrapper .form {
+  background: rgb(242, 242, 242);
+  width: 25rem;
+  border: solid black 0.1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+}
+.section-form .form-container .form-wrapper .form .block-form_title {
+  padding: 0 0 1rem 0;
+}
+.section-form .form-container .form-wrapper .form .block-form_title .form_title-container {
+  color: rgb(245, 244, 244);
+  background: rgb(26, 115, 232);
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+}
+.section-form .form-container .form-wrapper .form .block-form_title .form_title-container .form_title-wrapper .form_title-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-form .form-container .form-wrapper .form .block-lable_up .lable_up-container .lable_up-wrapper .lable_up-text {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section-form .form-container .form-wrapper .form .block-inputs .inputs-container .inputs-wrapper .block-input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.section-form .form-container .form-wrapper .form .block-inputs .inputs-container .inputs-wrapper .block-input .input-container .input-wrapper .input {
+  height: 2rem;
+  width: 17.5rem;
+}
+.section-form .form-container .form-wrapper .form .block-buttons .buttons-container .buttons-wrapper .block-button .button-container .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+.section-form .form-container .form-wrapper .form .block-buttons .buttons-container .buttons-wrapper .block-button .button-container .button-wrapper .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  width: 5rem;
+  height: 2rem;
+  color: rgb(255, 255, 255);
+  background: rgb(26, 115, 232);
+}
